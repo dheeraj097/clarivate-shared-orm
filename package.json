@@ -1,0 +1,29 @@
+{
+  "name": "clarivate-shared-orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "migration:generate": "ts-node ./node_modules/typeorm/cli -d src/database.ts migration:generate ./src/migrations/InitialMigration",
+    "migration:run": "ts-node ./node_modules/typeorm/cli -d src/database.ts migration:run",
+    "migration:revert": "ts-node ./node_modules/typeorm/cli -d src/database.ts migration:revert",
+    "seed": "ts-node src/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "dotenv": "^16.4.7",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
