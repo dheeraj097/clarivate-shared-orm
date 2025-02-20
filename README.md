@@ -51,3 +51,6 @@ The project uses environment variables to configure the database connection. Cre
 - DB_PASSWORD=your_password 
 - DB_DATABASE=clarivate_db 
 - DB_LOGGING=true
+
+## Your database tables will look something like this after the setup is complete
+![image](https://github.com/user-attachments/assets/acc74590-46b7-4523-8240-aed3fb9e3e13)
